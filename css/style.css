@@ -447,7 +447,7 @@ ul {
 }
 
 .footer-top {
-    padding: 60px 55px 70px;
+    padding: 60px 55px;
     color: #737373;
     font-size: 0.9rem;
     line-height: 1.8;
@@ -467,8 +467,14 @@ ul {
     text-transform: uppercase;
 }
 
+.schedule__list {
+    margin: 0 auto 15px;
+    text-align: left;
+}
+
 .schedule__day {
     font-weight: 700;
+    padding-right: 10px;
 }
 
 .contacts span {
