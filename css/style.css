@@ -668,7 +668,15 @@ ul {
     }
 
     .footer-top__title {
+        margin-bottom: 0;
+    }
+
+    .contacts {
         margin-bottom: 15px;
+    }
+
+    .social__list {
+        padding-top: 5px;
     }
 
     .footer-bottom__text {
