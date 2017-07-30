@@ -329,6 +329,8 @@ ul {
     max-width: 400px;
 }
 
+
+
 .services__icon {
     width: 164px;
     height: 164px;
@@ -496,6 +498,10 @@ ul {
     border-radius: 100%;
     cursor: pointer;
     transition: all 0.2s ease-out;
+}
+
+.social__item:first-child {
+    margin-left: 0;
 }
 
 .social__item--vk:hover {
