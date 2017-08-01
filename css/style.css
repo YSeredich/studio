@@ -63,9 +63,42 @@ ul {
     align-items: center;
     height: 100vh;
     color: #fff;
-    background: url('../img/header_bg.jpg');
+}
+
+.header__bg {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-size: cover;
     background-attachment: fixed;
+    transition: all 1s ease-out;
+}
+
+.header__bg--1 {
+    background-image: url('../img/bg_1.jpg');
+}
+
+.header__bg--2 {
+    background-image: url('../img/bg_2.jpg');
+}
+
+.header__bg--3 {
+    background-image: url('../img/bg_3.jpg');
+}
+
+.header__bg--4 {
+    background-image: url('../img/bg_4.jpg');
+}
+
+.header__bg--5 {
+    background-image: url('../img/bg_5.jpg');
+}
+
+.header__bg--6 {
+    background-image: url('../img/bg_6.jpg');
 }
 
 .header::after {
@@ -195,12 +228,14 @@ ul {
 }
 
 .about__phone {
+    display: block;
     margin-bottom: 34px;
     color: #00a1eb;
     font-size: 1.4rem;
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .about__photo {
@@ -320,42 +355,45 @@ ul {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .services__item {
-    flex: 1 1 360px;
+    flex: 1 1 320px;
     text-align: center;
     margin: 0 15px 30px;
     max-width: 400px;
 }
 
-
-
 .services__icon {
+    display: flex;
+    justify-content: center;
     width: 164px;
     height: 164px;
     margin: 0 auto 35px;
     border-radius: 100%;
-    border: 3px solid #00a1eb;
+    border: 5px solid #00a1eb;
     background: #00a1eb no-repeat center center;
     cursor: pointer;
     transition: all 0.2s ease-out;
 }
 
-.services__item:nth-child(1) .services__icon {
-    background-image: url('../img/services_1.png');
+.services__icon svg {
+    display: block;
+    width: 110px;
 }
 
-.services__item:nth-child(2) .services__icon {
-    background-image: url('../img/services_2.png');
-}
-
-.services__item:nth-child(3) .services__icon {
-    background-image: url('../img/services_3.png');
+.services__icon path {
+    fill: #fff;
+    transition: all 0.2s ease-out;
 }
 
 .services__icon:hover {
     background-color: #fff;
+}
+
+.services__icon:hover path {
+    fill: #00a1eb;
 }
 
 .services__title {
@@ -384,6 +422,8 @@ ul {
     color: #737373;
     font-size: 0.9rem;
     line-height: 1.5;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .map {
@@ -444,10 +484,6 @@ ul {
     margin-bottom: 25px;
 }
 
-.footer {
-
-}
-
 .footer-top {
     padding: 60px 55px;
     color: #737373;
@@ -479,8 +515,13 @@ ul {
     padding-right: 10px;
 }
 
-.contacts span {
+.contacts__phone a {
     font-weight: 700;
+    text-decoration: none;
+}
+
+.contacts a {
+    color: #737373;
 }
 
 .social__list {
@@ -610,6 +651,11 @@ ul {
 768px tablet
 992px desktop
 */
+
+.is-visible {
+    opacity: 1;
+    transition: all 1s ease-out;
+}
 
 @media(max-width: 768px) {
 
