@@ -74,31 +74,27 @@ ul {
     left: 0;
     background-size: cover;
     background-attachment: fixed;
-    transition: all 1s ease-out;
+    transition: all 2s ease-out;
 }
 
 .header__bg--1 {
-    background-image: url('../img/bg_1.jpg');
+    background-image: url('https://ucarecdn.com/05b1d8b7-81a1-4a00-b079-65c2a7deabe8/-/progressive/yes/-/quality/lighter/bg_1.jpg');
 }
 
 .header__bg--2 {
-    background-image: url('../img/bg_2.jpg');
+    background-image: url('https://ucarecdn.com/a61d9732-b792-4125-b954-aecf088151b2/-/progressive/yes/-/quality/lighter/bg_2.jpg');
 }
 
 .header__bg--3 {
-    background-image: url('../img/bg_3.jpg');
+    background-image: url('https://ucarecdn.com/ac54681c-b3ee-4a67-b7c8-d920ac22a5d5/-/progressive/yes/-/quality/lighter/bg_3.jpg');
 }
 
 .header__bg--4 {
-    background-image: url('../img/bg_4.jpg');
+    background-image: url('https://ucarecdn.com/29119bb3-f35c-4b17-903d-1d30cd75f229/-/progressive/yes/-/quality/lighter/bg_4.jpg');
 }
 
 .header__bg--5 {
-    background-image: url('../img/bg_5.jpg');
-}
-
-.header__bg--6 {
-    background-image: url('../img/bg_6.jpg');
+    background-image: url('https://ucarecdn.com/12b7a286-0cce-4724-836f-d73a71daca27/-/progressive/yes/-/quality/lighter/bg_5.jpg');
 }
 
 .header::after {
@@ -654,7 +650,7 @@ ul {
 
 .is-visible {
     opacity: 1;
-    transition: all 1s ease-out;
+    transition: all 2s ease-out;
 }
 
 @media(max-width: 768px) {
