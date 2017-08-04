@@ -654,6 +654,34 @@ ul {
     text-transform: uppercase;
 }
 
+.scroll-top {
+    display: block;
+    position: fixed;
+    left: 15px;
+    bottom: 20px;
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    pointer-events: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.scroll-top svg {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.scroll-top path {
+    fill: #00a1eb;
+}
+
+.scroll-top.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 /*swiper styles  */
 
 .swiper-container {
@@ -733,6 +761,10 @@ ul {
 
     .container {
         padding: 20px;
+    }
+
+    .header__down {
+        display: none;
     }
 
     .topbar__nav {
