@@ -156,8 +156,20 @@ ul {
 }
 
 .topbar__phone {
+    display: flex;
+    align-items: center;
     font-size: 1rem;
     white-space: nowrap;
+}
+
+.topbar__phone-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+.topbar__phone-icon path {
+    fill: #fff;
 }
 
 .promo {
@@ -224,7 +236,8 @@ ul {
 }
 
 .about__phone {
-    display: block;
+    display: flex;
+    align-items: center;
     margin-bottom: 34px;
     color: #00a1eb;
     font-size: 1.4rem;
@@ -232,6 +245,16 @@ ul {
     line-height: 1;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.about__phone-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.about__phone-icon path {
+    fill: #00a1eb;
 }
 
 .about__photo {
@@ -429,6 +452,7 @@ ul {
 
 .map__left {
     width: 50%;
+    height: 530px;
 }
 
 .map__right {
@@ -510,13 +534,31 @@ ul {
     padding-right: 10px;
 }
 
-.contacts__phone a {
+.contacts__phone {
     font-weight: 700;
     text-decoration: none;
 }
 
 .contacts a {
     color: #737373;
+}
+
+.contacts__phone,
+.contacts__address,
+.contacts__email {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.contacts__icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.contacts__icon path {
+    fill: #737373;
 }
 
 .social__list {
