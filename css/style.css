@@ -617,7 +617,7 @@ ul {
 }
 
 .footer-bottom__text {
-    padding: 40px;
+    padding: 40px 0;
     color: #fff;
     font-size: 0.9rem;
     text-transform: uppercase;
