@@ -65,6 +65,37 @@ ul {
     color: #fff;
 }
 
+.header__down {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 3;
+
+}
+
+.header__down-icon {
+    width: 40px;
+    height: 40px;
+    opacity: 0.6;
+    transition: all 0.2s ease-out;
+}
+
+.header__down-link {
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.header__down-link:hover .header__down-icon {
+    opacity: 1;
+}
+
+.header__down-icon polygon {
+    fill: #fff;
+}
+
 .header__bg {
     position: absolute;
     opacity: 0;

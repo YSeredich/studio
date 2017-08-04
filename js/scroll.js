@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
         duration: 1000
     });
 
-    var triggers = document.querySelectorAll('.topbar__link');
+    var triggers = document.querySelectorAll('.scroll-trigger');
     for (var i = 0; i < triggers.length; i++) {
         moveTo.registerTrigger(triggers[i]);
     }
