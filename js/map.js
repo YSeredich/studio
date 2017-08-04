@@ -17,8 +17,8 @@
             }, {
                 iconLayout: 'default#image',
                 iconImageHref: 'img/pin.svg',
-                iconImageSize: [40, 52],
-                iconImageOffset: [-5, -48]
+                iconImageSize: [50, 62],
+                iconImageOffset: [-5, -40]
             });
 
         studioMap.geoObjects.add(studioPlacemark);
