@@ -1,4 +1,4 @@
-(function() {
+var portfolio = function() {
     var galleryTop = new Swiper('.gallery-top', {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
@@ -23,4 +23,6 @@
 
     galleryTop.params.control = galleryThumbs;
     galleryThumbs.params.control = galleryTop;
-})();
+}();
+
+module.exports = portfolio;

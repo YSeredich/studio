@@ -1,0 +1,26 @@
+{
+  "name": "studio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YSeredich/studio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YSeredich/studio/issues"
+  },
+  "homepage": "https://github.com/YSeredich/studio#readme",
+  "dependencies": {
+    "moveto": "^1.6.1",
+    "scrollreveal": "^3.3.6",
+    "swiper": "^3.4.2",
+    "webpack": "^3.4.1"
+  }
+}

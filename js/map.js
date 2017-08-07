@@ -1,4 +1,4 @@
-(function() {
+var map = function() {
     ymaps.ready(init);
     var studioMap;
     var studioPlacemark;
@@ -23,4 +23,6 @@
 
         studioMap.geoObjects.add(studioPlacemark);
     }
-})();
+}();
+
+module.exports = map;

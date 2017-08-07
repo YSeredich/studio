@@ -1,4 +1,4 @@
-(function() {
+var header = function() {
     var headerBgs = document.querySelector('.header_bgs');
     function changeBg() {
         var active = headerBgs.querySelector('.is-visible');
@@ -14,4 +14,6 @@
     setTimeout(function() {
         setInterval(changeBg, 5000);
     }, 5000);
-})();
+}();
+
+module.exports = header;
