@@ -1,3 +1,4 @@
+/*common*/
 html {
     font-size: 16px;
 }
@@ -56,6 +57,8 @@ ul {
     color: #fff;
 }
 
+
+/*header*/
 .header {
     position: relative;
     display: flex;
@@ -140,6 +143,8 @@ ul {
     background-color: #00a1eb;
 }
 
+
+/*topbar*/
 .topbar {
     position: absolute;
     top: 0;
@@ -203,6 +208,8 @@ ul {
     fill: #fff;
 }
 
+
+/*promo*/
 .promo {
     position: relative;
     padding: 20px;
@@ -222,6 +229,8 @@ ul {
     font-weight: 700;
 }
 
+
+/*about*/
 .about {
     padding: 130px 20px 95px;
 }
@@ -353,6 +362,8 @@ ul {
     margin-bottom: 20px;
 }
 
+
+/*portfolio*/
 .portfolio {
     padding: 84px 0;
     background-color: #fcfcfc;
@@ -392,6 +403,8 @@ ul {
     line-height: 1.5;
 }
 
+
+/*services*/
 .services {
     padding: 100px 0 90px;
 }
@@ -475,6 +488,8 @@ ul {
     margin: 0 auto;
 }
 
+
+/*map*/
 .map {
     display: flex;
     background: #2eb2ef;
@@ -534,6 +549,8 @@ ul {
     margin-bottom: 25px;
 }
 
+
+/*footer*/
 .footer-top {
     padding: 60px 55px;
     color: #737373;
@@ -570,6 +587,10 @@ ul {
     text-decoration: none;
 }
 
+.contacts__address {
+    text-decoration: none;
+}
+
 .contacts a {
     color: #737373;
 }
@@ -580,6 +601,7 @@ ul {
     display: flex;
     align-items: center;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 .contacts__icon {
@@ -654,6 +676,8 @@ ul {
     text-transform: uppercase;
 }
 
+
+/*scroll top*/
 .scroll-top {
     display: block;
     position: fixed;
@@ -682,8 +706,7 @@ ul {
     pointer-events: auto;
 }
 
-/*swiper styles  */
-
+/*swiper*/
 .swiper-container {
     width: 100%;
     max-width: 720px;
@@ -742,12 +765,6 @@ ul {
     opacity: 0;
 }
 
-/* breakpoints:
-450px mobile
-768px tablet
-992px desktop
-*/
-
 .is-visible {
     opacity: 1;
     transition: all 2s ease-out;
@@ -763,10 +780,7 @@ ul {
         padding: 20px;
     }
 
-    .header__down {
-        display: none;
-    }
-
+    .header__down,
     .topbar__nav {
         display: none;
     }
@@ -775,17 +789,8 @@ ul {
         font-size: 40px;
     }
 
-    .services__item {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
     .about__container {
         flex-direction: column;
-    }
-
-    .about__text {
-        padding-right: 0;
     }
 
     .about__info,
@@ -795,10 +800,18 @@ ul {
         width: 100%;
     }
 
+    .about__text,
     .portfolio,
     .services,
-    .about {
+    .about,
+    .footer-top,
+    .footer-bottom__text {
         padding: 0;
+    }
+
+    .services__item {
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .map {
@@ -811,8 +824,8 @@ ul {
         padding: 20px;
     }
 
-    .social__list {
-        justify-content: center;
+    .map__left {
+        height: 300px;
     }
 
     .footer-top__container,
@@ -821,28 +834,26 @@ ul {
         text-align: center;
     }
 
-    .footer-top {
-        padding: 0;
-    }
-
     .footer-top__title {
         margin-bottom: 0;
+    }
+
+    .footer-bottom__text:first-child {
+        margin-bottom: 15px;
     }
 
     .contacts {
         margin-bottom: 15px;
     }
 
+    .contacts__address,
+    .contacts__phone,
+    .contacts__email {
+        justify-content: center;
+    }
+
     .social__list {
+        justify-content: center;
         padding-top: 5px;
     }
-
-    .footer-bottom__text {
-        padding: 0;
-    }
-
-    .footer-bottom__text:first-child {
-        margin-bottom: 15px;
-    }
 }
-
