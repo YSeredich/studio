@@ -17,7 +17,7 @@ var map = function() {
             }, {
                 iconLayout: 'default#image',
                 iconImageHref: 'img/pin.svg',
-                iconImageSize: [50, 62],
+                iconImageSize: [52, 52],
                 iconImageOffset: [-5, -40]
             });
 
