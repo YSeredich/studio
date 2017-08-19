@@ -1,4 +1,7 @@
 var portfolio = function() {
+    var gallery = document.getElementById('portfolio-section');
+    if (!gallery) return;
+
     var galleryTop = new Swiper('.gallery-top', {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',

@@ -5,7 +5,18 @@ html {
 
 body {
     min-width: 320px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: -apple-system,
+        BlinkMacSystemFont,
+        Segoe UI,
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        Fira,
+        Sans,
+        Droid Sans,
+        Helvetica Neue,
+        sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;
 }
@@ -164,6 +175,8 @@ ul {
 }
 
 .topbar__logo {
+    color: #fff;
+    text-decoration: none;
     font-size: 1.55rem;
     padding: 20px 15px;
 }
@@ -545,6 +558,10 @@ ul {
     line-height: 1.5;
 }
 
+.map__text a {
+    color: #fff;
+}
+
 .map__btn {
     margin-bottom: 25px;
 }
@@ -763,6 +780,31 @@ ul {
 
 .gallery-thumbs .swiper-slide-active::before {
     opacity: 0;
+}
+
+/* route page */
+.route {
+    text-align: center;
+    background-color: #fcfcfc;
+}
+
+.route__container {
+    padding: 100px 20px;
+}
+
+.route__text {
+    margin: 0 auto 30px;
+    width: 85%;
+    max-width: 800px;
+    color: #737373;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.route__image {
+    display: block;
+    width: 80%;
+    margin: 0 auto 50px;
 }
 
 .is-visible {
