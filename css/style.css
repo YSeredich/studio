@@ -435,17 +435,17 @@ ul {
 }
 
 .services__item {
-    flex: 1 1 320px;
+    flex: 1 1 250px;
     text-align: center;
     margin: 0 15px 30px;
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .services__icon {
     display: flex;
     justify-content: center;
-    width: 164px;
-    height: 164px;
+    width: 134px;
+    height: 134px;
     margin: 0 auto 35px;
     border-radius: 100%;
     border: 5px solid #00a1eb;
@@ -455,7 +455,7 @@ ul {
 
 .services__icon svg {
     display: block;
-    width: 110px;
+    width: 80px;
 }
 
 .services__icon path {
@@ -472,25 +472,13 @@ ul {
 }
 
 .services__title {
-    position: relative;
     display: inline-block;
     margin-bottom: 20px;
-    padding-bottom: 25px;
     color: #00a1eb;
     font-size: 1.5rem;
+    line-height: 1.2;
     font-weight: 700;
     text-transform: uppercase;
-}
-
-.services__title::after {
-    position: absolute;
-    display: block;
-    content: '';
-    height: 1px;
-    left: 20px;
-    right: 20px;
-    bottom: 0;
-    background-color: #a1a1a1;
 }
 
 .services__text {
