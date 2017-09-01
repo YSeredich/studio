@@ -19,7 +19,6 @@ var portfolio = function() {
         slidesPerView: 'auto',
         touchRatio: 0.2,
         slideToClickedSlide: true,
-        autoplay: 10000,
         loopedSlides: document.querySelectorAll('.gallery-thumbs .swiper-slide').length,
         loop: true
     });

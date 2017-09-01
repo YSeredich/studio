@@ -287,6 +287,9 @@ ul {
     font-size: 0.9rem;
     line-height: 1.5;
 }
+.about__text a {
+    color: #737373;
+}
 
 .about__phone {
     display: flex;
@@ -498,8 +501,10 @@ ul {
 }
 
 .map__left {
+    display: block;
     width: 50%;
     height: 530px;
+    background: url('https://ucarecdn.com/69ce6ee5-5c3c-4543-bcb2-765b73a6cc77/-/progressive/yes/map.png') no-repeat center center;
 }
 
 .map__right {
@@ -587,7 +592,8 @@ ul {
     padding-right: 10px;
 }
 
-.contacts__phone {
+.contacts__phone,
+.contacts__mobile {
     font-weight: 700;
     text-decoration: none;
 }
@@ -602,7 +608,9 @@ ul {
 
 .contacts__phone,
 .contacts__address,
-.contacts__email {
+.contacts__email,
+.contacts__mobile {
+    position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 5px;
@@ -615,12 +623,65 @@ ul {
     margin-right: 10px;
 }
 
+.contacts__velcom,
+.contacts__life,
+.contacts__velcom--hover,
+.contacts__life--hover {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.contacts__velcom,
+.contacts__life {
+    opacity: 0.6;
+    transition: opacity 0.2s ease-out;
+}
+
+.contacts__velcom {
+    background: url('../img/logo-velcom_black.png') no-repeat center center;
+    background-size: contain;
+}
+
+.contacts__life {
+    background: url('../img/logo-life_black.png') no-repeat center center;
+    background-size: contain;
+}
+
+.contacts__velcom--hover,
+.contacts__life--hover {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+.contacts__velcom--hover {
+    background: url('../img/logo-velcom_color.png') no-repeat center center;
+    background-size: contain;
+}
+
+.contacts__life--hover {
+    background: url('../img/logo-life_color.png') no-repeat center center;
+    background-size: contain;
+}
+
+.contacts__mobile:hover .contacts__velcom,
+.contacts__mobile:hover .contacts__life {
+    opacity: 0;
+}
+
+.contacts__mobile:hover .contacts__velcom--hover,
+.contacts__mobile:hover .contacts__life--hover {
+    opacity: 1;
+}
+
 .contacts__icon path {
     fill: #737373;
 }
 
 .social__list {
     display: flex;
+    justify-content: center;
 }
 
 .social__item {
@@ -714,8 +775,7 @@ ul {
 /*swiper*/
 .swiper-container {
     width: 100%;
-    max-width: 720px;
-    height: 300px;
+    max-width: 550px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -726,7 +786,7 @@ ul {
 }
 
 .gallery-top {
-    height: 50vh;
+    height: 600px;
     width: 100%;
 }
 
@@ -738,7 +798,7 @@ ul {
 }
 
 .gallery-thumbs .swiper-slide {
-    width: 25%;
+    width: 20%;
     height: 100%;
     opacity: 0.8;
     position: relative;
@@ -878,12 +938,27 @@ ul {
 
     .contacts__address,
     .contacts__phone,
-    .contacts__email {
+    .contacts__email,
+    .contacts__mobile {
         justify-content: center;
     }
 
+    .contacts__velcom--hover,
+    .contacts__life--hover {
+        display: none;
+    }
+
+    .contacts__mobile:hover .contacts__velcom,
+    .contacts__mobile:hover .contacts__life {
+        opacity: 0.6;
+    }
+
     .social__list {
-        justify-content: center;
         padding-top: 5px;
+    }
+
+    .route__image {
+        width: 100%;
+        margin: 0 auto 30px;
     }
 }

@@ -7,4 +7,3 @@ require('./about');
 require('./scroll');
 require('./aos');
 require('./portfolio');
-require('./map');
