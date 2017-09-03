@@ -523,6 +523,7 @@ ul {
 .map__title {
     position: relative;
     padding-bottom: 29px;
+    margin-top: 0;
     margin-bottom: 26px;
     color: #ffffff;
     font-size: 2.1rem;
@@ -860,6 +861,25 @@ ul {
     transition: all 2s ease-out;
 }
 
+@media(max-width: 1024px) {
+    .map__right {
+        padding: 0 30px;
+    }
+
+    .map__title {
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    .map__text {
+        margin-bottom: 10px;
+    }
+
+    .map__title::after {
+        display: none;
+    }
+}
+
 @media(max-width: 768px) {
 
     html {
@@ -897,6 +917,11 @@ ul {
     .footer-top,
     .footer-bottom__text {
         padding: 0;
+    }
+
+    .gallery-top {
+        height: auto;
+        min-height: 350px;
     }
 
     .services__item {
